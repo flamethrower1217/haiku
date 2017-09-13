@@ -1,6 +1,7 @@
 body {
     font-family: 'Anton', sans-serif;
     margin: auto;
+    color: #3E76C5;
 }
 .top {
     background-color: #F25266;
@@ -17,46 +18,8 @@ h1 {
 
 .middle {
     background-color:#ECECEC;
-    border-left: #666561 1em  solid;
-    border-right: #666561 1em solid;
 }
 
-.pic {
-    display: block;
-    margin: auto;
-    width: 40%;
-}
-
-label{
-    color: #2E90BF;
-    column-count: 1;
-    cursor: pointer;
-}
-
-
-input {
-    background-color: #2E90BF;
-    border-color: #666561;
-    width: 14.2%;
-    column-count: 1;
-}
-
-input:nth-child(12){
-    font-family: 'Anton', sans-serif;
-    color:#FFF;
-    background: #2E90BF;
-    border-color: #000;
-    height: 2em;
-    width: 100%;
-    font-size: 1em;
-    cursor: pointer;
-    margin-top: 1em;   
-}
-
-input:nth-child(12):active{
-    background-color: #2E90BF;
-    transform: translateY(4px);
-}
 
 .bottom {
     background-color:#F25266;
@@ -79,4 +42,22 @@ a:visited {
 
 a:hover { 
     color: yellow;
+}
+
+.movedown {
+    margin-top: -1.97em;
+    border-color: #666561;
+}
+
+.midbackground {
+    background-color:#666561;
+}
+
+.subone{
+    width: 100%;
+    background-color: #4E9AFB;
+}
+
+.incolor{
+    color:red;
 }

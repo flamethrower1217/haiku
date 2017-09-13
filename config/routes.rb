@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'samples#index'
+  root 'haikus#about'
 end
