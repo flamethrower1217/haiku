@@ -1,5 +1,6 @@
+
+require 'ruby_rhymes'
 def syllable_counter(word)
-  # Your code goes here!
-  # Directions: Count the number of syllables in the variable word
-  # Hint, do not use puts!
+  return word.to_s.to_phrase.syllables
 end
+puts syllable_counter('hello')

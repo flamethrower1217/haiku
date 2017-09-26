@@ -1,9 +1,19 @@
 def grading(num)
-  # Your code goes here!
-  # Directions: Give a grade based on the variable num
-  # Hint, do not use puts!
-  # Hint, this will require if/else statements (or a case stament)
+  if num < 60
+    return "F"
+  elsif num <= 69
+    return "D"
+  elsif num <= 79
+    return "C"
+  elsif num <= 89
+    return "B"
+  elsif num <= 100
+    return "A"
+  else
+    return "Wrong score"
+  end
 end
+puts grading [75]
 
 # Grading Scale
 #   100-90: A

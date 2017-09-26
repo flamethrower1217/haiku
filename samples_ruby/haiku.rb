@@ -1,3 +1,6 @@
+
+ require 'ruby_rhymes'
+
 class SampleHaiku
 
   attr_accessor :paragraph
@@ -7,16 +10,29 @@ class SampleHaiku
   end
 
   def valid
-    # YOUR CODE GOES HERE!
-    #  This should return a boolean (true or false)
-    #  Example: a = Haiku.new("This is my paragraph")
-    #           a.valid will return false since it does not meet the rules of a Haiku
-    #  Hint! Use the count_lines.rb file and the syllable_counter.rb file.
-    #    There are only three lines in a a Haiku.  Your count_lines method can help you
-    #    There are 17 syllables in a Haiku.  Your syllable_counter method can help you
-    #    Extra challenge
-    #      The first line in the haiku is 5 syllables.
-    #      The second line is 7 syllables
-    #      The third line is 5 syllables like the first.
+    is_valid = true
+    if @paragraph.lines.count != 3
+      is_valid = false
+    end
+    
+    if is_valid == true
+      line1 = @paragraph.split("\n")[0]
+      line2 = @paragraph.split("\n")[1]
+      line3 = @paragraph.split("\n")[2]
+      
+      if line1.to_phrase.syllables != 5
+        is_valid = false
+      end
+      
+      if line2.to_phrase.syllables != 7
+        is_valid = false
+      end
+      
+      if line3.to_phrase.syllables != 5
+        is_valid = false
+      end
+    end
+    
+    return is_valid
   end
 end
