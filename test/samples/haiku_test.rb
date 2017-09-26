@@ -1,7 +1,7 @@
 require 'test_helper'
 require File.expand_path('samples_ruby/haiku.rb')
 
-class FindVariable < ActiveSupport::TestCase
+class HaikuTest < ActiveSupport::TestCase
 
   test 'valid haiku' do
     valid_haiku = SampleHaiku.new("haikus are easy \n sometimes they do not make sense \n refrigerator")

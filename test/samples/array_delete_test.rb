@@ -1,6 +1,6 @@
 require 'samples/find_variable'
 
-class AddNumbersTest < FindVariable
+class ArrayDeleteTest < FindVariable
   def setup
     find_method('samples_ruby/array_delete.rb')
   end

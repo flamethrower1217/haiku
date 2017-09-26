@@ -1,6 +1,6 @@
 require 'samples/find_variable'
 
-class GradingTest < FindVariable
+class PercentTest < FindVariable
   def setup
     find_method('samples_ruby/percent.rb')
   end
