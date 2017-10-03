@@ -9,7 +9,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <!-- Link to CSS Sheet -->
-    <link type="text/css" rel="stylesheet" href="assets/stylesheets/style.css">
+    <link type="text/css" rel="stylesheet" href="../samples_html/assets/stylesheets/style.css">
   </head>
   <body>
 <!-- Top -->
@@ -61,8 +61,12 @@
     </form>
     </div>
 <!-- Bottom -->
-  <div>
-    <nav class="nav bottom">
+<div class="bottom">
+<div class="btnbox navcon">
+  <button type="button" class="nav navbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="navtext">Navigate This Page</span></button>
+    <span class="sr-only">Toggle Dropdown</span>
+  <div class="dropdown-menu">
+    <div class="navbg">
       <a class="nav-link active col-1" href="form_create_haiku.html">Create Haiku</a>
       <a class="nav-link active col-1" href="form_edit_haiku.html">Edit Haiku</a>
       <a class="nav-link active col-1" href="form_edit_user.html">Edit User</a>
@@ -73,8 +77,9 @@
       <a class="nav-link active col-1" href="index.html">Index</a>
       <a class="nav-link active col-1" href="user_list.html">User List</a>
       <a class="nav-link active col-1" href="user_one.html">User One</a>
-    </nav>
   </div>
+  </div>
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

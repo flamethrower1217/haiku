@@ -1,6 +1,11 @@
 <h1 style="text-align: center;"><%= @haiku.title %></h1>
 
-<p><%= @haiku.poem %></p>
-<p><%= "Their id is #{@haiku.id}" %></p>
+<hr />
 
-%= link_to "Edit This Haiku", "/haikus/#{@haiku.id}/edit" %>
+<%= simple_format(@haiku.poem) %>
+
+<hr />
+<%= link_to "Edit This Haiku", "/haikus/#{@haiku.id}/edit" %>
+<br />
+
+<%= link_to 'Delete This Haiku', [@haiku], method: :delete %>

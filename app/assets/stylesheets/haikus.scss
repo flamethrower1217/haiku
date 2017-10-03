@@ -32,6 +32,11 @@
     column-count: 10;
 }
 
+.haiku-edit .edit_haiku ul {
+    list-style: none;
+    column-count: auto;
+}
+
 
 .haiku-edit a:link {
     color: #6DBF2E;
@@ -62,6 +67,7 @@
 .haiku-edit .incolor {
     color:red;
 }
+
 .haiku-home {
   background-image:url("http://cdn.wallpapersafari.com/96/26/z7T4hW.jpg");
 }
@@ -119,6 +125,8 @@
 .haiku-home .poems {
     background-color: pink;
 }
+
+
 .haiku-new {
   background-color: #DAEE13;
 }

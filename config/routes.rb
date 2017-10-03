@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-    root 'haikus#home'
+  root 'haikus#home'
+
   get '/rules', to: 'haikus#rules'
-  
-  resources:haikus
-  
-  # The rails way
-    resources :users
+
+
+  resources :haikus
+  resources :users
 end
 

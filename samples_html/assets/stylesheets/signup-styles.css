@@ -1,6 +1,6 @@
 body {
     font-family: 'Cinzel', serif;
-    background-image: url(https://cdn.pixabay.com/photo/2017/04/15/11/51/mt-fuji-2232246_960_720.jpg)
+    background-image: url('https://cdn.pixabay.com/photo/2017/04/15/11/51/mt-fuji-2232246_960_720.jpg')
 }
 h1 {
     font-size: 40px;

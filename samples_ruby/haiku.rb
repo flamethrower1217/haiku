@@ -1,5 +1,4 @@
-
- require 'ruby_rhymes'
+require 'ruby_rhymes'
 
 class SampleHaiku
 
@@ -14,7 +13,7 @@ class SampleHaiku
     if @paragraph.lines.count != 3
       is_valid = false
     end
-    
+
     if is_valid == true
       line1 = @paragraph.split("\n")[0]
       line2 = @paragraph.split("\n")[1]
@@ -32,7 +31,7 @@ class SampleHaiku
         is_valid = false
       end
     end
-    
+
     return is_valid
   end
 end

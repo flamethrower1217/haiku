@@ -18,7 +18,7 @@ class SyllableCounterTest < FindVariable
   end
 
   test 'received syllable' do
-    check_method('received', 3)
+    check_method('received', 2)
   end
 
   test 'spy syllable' do

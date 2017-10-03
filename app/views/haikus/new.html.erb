@@ -30,14 +30,29 @@
     </p>
   </div>
 
-  <form>
-    <textarea name="message" rows="8" cols="30">
-    </textarea>
-    <br/>
-    <input type="email" name="email">e-mail
-    <br/>
-    <input type="submit" value="Submit">
-  </form>
+  <%= form_for @haiku do |f| %>
+    <% if @haiku.errors.any? %>
+      <h5>Errors</h5>
+      <ul>
+        <% @haiku.errors.full_messages.each do |message| %>
+          <li><p><%= message %></p></li>
+        <% end %>
+      </ul>
+    <% end %>
+    <%# f.label :user %>:
+    <%# f.collection_select :user_id, User.all.order(:name), :id, :name, include_blank: true %><br />
+
+    <%= f.label :user_email %>:
+    <%= f.text_field :user_email %><br />
+
+    <%= f.label :title %>:
+    <%= f.text_field :title %><br />
+
+    <%= f.label :poem %>:
+    <%= f.text_area :poem, rows: 3 %><br />
+
+    <%= f.submit "Save changes" %>
+  <% end %>
 
   <h6>
     Any questions or comments feel free to

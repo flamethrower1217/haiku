@@ -1,1 +1,29 @@
-<h1>Use user_one file</h1>
+<div class='user-show'>
+  <div data-role="main" class="ui-content">
+    <p>Haiku Haiku Haiku to You Too!.</p>
+  </div>
+
+  <div id="page-container"> All About Why I Like Haiku's </div>
+
+  <hr/>
+
+  <p style="font-family:veranda; color: orange;">
+    Details about <%= @user.name %>
+  </p>
+
+  <p style="font-family:veranda; color: orange;">
+     Favorite types of Haikus to write,
+     Number of Haikus written,
+     How User started writing Haikus, and
+     What kind of snack food does user like. Trying to do Thursday's homework and font isn't changing. Okay, Now it changed and holy shmoly
+     it is underlined now.
+   </p>
+
+   <hr />
+   <%= link_to "Edit This User", edit_user_path(@user) %>
+   <br />
+
+   <%= link_to 'Delete This User', [@user], method: :delete %>
+
+  <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" width="50px"/>
+</div>

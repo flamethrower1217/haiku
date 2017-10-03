@@ -9,6 +9,9 @@ def looping(num)
 
   return new_array
 end
+
+  return new_array
+end
 puts loop(-10)
 # Hint, this will require a loop and array and (possibly) some addition
 # It may also require you use a variable to store the array numbers
