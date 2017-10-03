@@ -16,7 +16,7 @@ class HaikusController < ApplicationController
 def edit 
        @haiku = Haiku.find(params[:id])
      
-    
+    def update
 end
     def home
     end
