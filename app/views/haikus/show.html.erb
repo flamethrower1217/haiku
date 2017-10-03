@@ -1,1 +1,6 @@
-<h1>Use haiku_one file</h1>
+<h1 style="text-align: center;"><%= @haiku.title %></h1>
+
+<p><%= @haiku.poem %></p>
+<p><%= "Their id is #{@haiku.id}" %></p>
+
+%= link_to "Edit This Haiku", "/haikus/#{@haiku.id}/edit" %>

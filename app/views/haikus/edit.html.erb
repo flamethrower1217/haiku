@@ -1,1 +1,18 @@
-<h1>Use form_edit_haiku file</h1>
+<div class='haiku-edit'>
+  <h1>This page is used to edit a Haiku.</h1>
+  <h3><%= "ID: #{@haiku.id}" %></h3>
+  <hr/>
+  <img src="https://ayegel-dev.nyc3.digitaloceanspaces.com/download.jpg">
+  
+  <%= form_for haikus_path(@haiku) do |f| %>
+    <%= f.label :title %>:
+    <%= f.text_field :title, value: @haiku.title %><br />
+    
+    <%= f.label :poem %>:
+    <%= f.text_field :poem, value: @haiku.poem %><br />
+    <%= f.submit "Save changes" %>
+  
+  <% end %>
+</div>
+
+

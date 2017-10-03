@@ -1,1 +1,16 @@
-<h1>Use haiku_list file</h1>
+
+<h1 style="text-align: center;">Haiku List</h1>
+<h2 class="image">
+
+   <img src="http://www.eskraay.com/wp-content/uploads/2015/03/haiku.jpg" width="200" height="200"/>
+</h2>
+<h3>
+    <p>Bad Haikus by Emily Ring</p>
+    <ol>
+        <% @haikus.each do |haiku| %>
+            <li>
+                <a href=<%= "/haikus/#{haiku.id}"%>  ><%= haiku.title %></a>
+            </li>
+<% end %>
+    </ol>
+</h3>
