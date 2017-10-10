@@ -18,6 +18,7 @@ gem 'devise', '~> 4.3'
 
 # sqlite database.  Not good for real apps.  You should look into postgres or mySQL
 gem 'sqlite3'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
