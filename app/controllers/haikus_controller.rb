@@ -17,12 +17,15 @@ class HaikusController < ApplicationController
     def update
       @haiku = Haiku.find(params[:id])
       @haiku.update(haiku_params)
-      if @haiku.valid?
+if @haiku.valid?
         redirect_to @haiku
       else
+        render : edit
+end
+
         render :edit
-      end
     end
+end
 
     def home
     end
