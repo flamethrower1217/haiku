@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171004003346) do
+ActiveRecord::Schema.define(version: 20171005234013) do
 
   create_table "haikus", force: :cascade do |t|
     t.string "title"
@@ -18,6 +18,17 @@ ActiveRecord::Schema.define(version: 20171004003346) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.index ["user_id"], name: "index_haikus_on_user_id"
+  end
+
+  create_table "ratings", force: :cascade do |t|
+    t.integer "vote"
+    t.integer "user_id"
+    t.integer "haiku_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["haiku_id"], name: "index_ratings_on_haiku_id"
+    t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
